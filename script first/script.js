@@ -1,2 +1,11 @@
-alert("reddy");
-alert("reddy");
+// alert("reddy");
+// console.log("reddy");
+// let name;
+// name = "reddybabu";
+// console.log(typeof name);
+// console.warn("enter your age");
+// console.error("you did not do");
+// let last_name = prompt("enter your name", "reddy");
+// console.log(last_name);
+// let num = 10000000000000000000n;
+// console.log(typeof num);
