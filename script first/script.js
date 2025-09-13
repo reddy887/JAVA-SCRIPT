@@ -21,3 +21,5 @@ function ba() {
   console.log(re.name, re.age);
 }
 ba();*/
+// operators
+console.log(45 + 3);
