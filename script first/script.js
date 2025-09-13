@@ -9,3 +9,15 @@
 // console.log(last_name);
 // let num = 10000000000000000000n;
 // console.log(typeof num);
+let details = [34, 56, 78, 89];
+console.log(details);
+console.log(typeof details);
+function ba() {
+  const re = {
+    name: "reddybabu",
+    age: 56,
+  };
+  console.log(typeof re);
+  console.log(re.name, re.age);
+}
+ba();
