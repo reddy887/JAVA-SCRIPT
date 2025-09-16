@@ -22,4 +22,7 @@ function ba() {
 }
 ba();*/
 // operators
-console.log(45 + 3);
+// console.log(45 + 3);
+// let re = "reddybabu";
+// let re1 = prompt("reddybabu");
+// console.log("wellcome back ".concat(re), re1);
