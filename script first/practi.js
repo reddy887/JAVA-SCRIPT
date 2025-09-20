@@ -21,24 +21,33 @@
 // };
 // obj.sub();
 // console.log(obj.name);
-const college = {
-  collegeName: "sdhr degree college",
-  location: "tirupati , new balaji colony",
-  teachers: [
-    "guru",
-    "eswar",
-    "laxmi",
-    {
-      guru: "trainer" + "hr",
-      eswar: "hadoop" + "java",
-      laxmi: "tableau" + "bigdata",
-    },
-  ],
-  subjects: ["trainer", "haddop", "tableau"],
-  teaching: {
-    guru: "trainer",
-    eswar: "hadoop",
-    laxmi: "tableau",
-  },
+// const college = {
+//   collegeName: "sdhr degree college",
+//   location: "tirupati , new balaji colony",
+//   teachers: [
+//     "guru",
+//     "eswar",
+//     "laxmi",
+//     {
+//       guru: "trainer" + "hr",
+//       eswar: "hadoop" + "java",
+//       laxmi: "tableau" + "bigdata",
+//     },
+//   ],
+//   subjects: ["trainer", "haddop", "tableau"],
+//   teaching: {
+//     guru: "trainer",
+//     eswar: "hadoop",
+//     laxmi: "tableau",
+//   },
+// };
+// console.log(college["teachers"][3]["guru"]);
+const users = {
+  user: "reddybabu",
+  group: "bca",
+  age: 22,
 };
-console.log(college["teachers"][3]["guru"]);
+// console.log(users);
+for (key in users) {
+  console.log(`${key} : ${users[key]}`);
+}
