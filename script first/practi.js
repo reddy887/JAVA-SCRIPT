@@ -9,15 +9,36 @@
 //   [34, "giribabu", 45],
 // ];
 // console.log(arr[1][0]);
-let obj = {
-  name: "reddy",
-  age: 23,
-  group: "bca",
-  sub: function () {
-    let a = 20;
-    let b = 34;
-    console.log(a + b);
+// let obj = {
+//   name: "reddy",
+//   age: 23,
+//   group: "bca",
+//   sub: function () {
+//     let a = 20;
+//     let b = 34;
+//     console.log(a + b);
+//   },
+// };
+// obj.sub();
+// console.log(obj.name);
+const college = {
+  collegeName: "sdhr degree college",
+  location: "tirupati , new balaji colony",
+  teachers: [
+    "guru",
+    "eswar",
+    "laxmi",
+    {
+      guru: "trainer" + "hr",
+      eswar: "hadoop" + "java",
+      laxmi: "tableau" + "bigdata",
+    },
+  ],
+  subjects: ["trainer", "haddop", "tableau"],
+  teaching: {
+    guru: "trainer",
+    eswar: "hadoop",
+    laxmi: "tableau",
   },
 };
-obj.sub();
-console.log(obj.name);
+console.log(college["teachers"][3]["guru"]);
