@@ -42,12 +42,26 @@
 //   },
 // };
 // console.log(college["teachers"][3]["guru"]);
-const users = {
-  user: "reddybabu",
-  group: "bca",
-  age: 22,
-};
-// console.log(users);
-for (key in users) {
-  console.log(`${key} : ${users[key]}`);
+// const users = {
+//   user: "reddybabu",
+//   group: "bca",
+//   age: 22,
+// };
+// // console.log(users);
+// for (key in users) {
+//   console.log(`${key} : ${users[key]}`);
+// }
+/*
+let num = 2;
+for (let i = 1; i < 11; i++) {
+  console.log(`${num} * ${i} = ${num * i}`);
+}*/
+//string return
+let str = "reddybabu";
+let reverse = " ";
+// console.log(str);
+for (let i = str.length - 1; i >= 0; i--) {
+  reverse += str[i];
+  console.log(reverse);
 }
+console.log(reverse);
