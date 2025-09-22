@@ -57,11 +57,20 @@ for (let i = 1; i < 11; i++) {
   console.log(`${num} * ${i} = ${num * i}`);
 }*/
 //string return
-let str = "reddybabu";
-let reverse = " ";
-// console.log(str);
-for (let i = str.length - 1; i >= 0; i--) {
-  reverse += str[i];
-  console.log(reverse);
+// let str = "reddybabu";
+// let reverse = " ";
+// // console.log(str);
+// for (let i = str.length - 1; i >= 0; i--) {
+//   reverse += str[i];
+//   console.log(reverse);
+// }
+// console.log(reverse);
+function add(num1, num2, func) {
+  let result = num1 + num2;
+  return func(result);
 }
-console.log(reverse);
+//second function
+function displayresults(re) {
+  console.log(re);
+}
+add(2, 5, displayresults);
