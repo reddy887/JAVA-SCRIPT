@@ -65,12 +65,23 @@ for (let i = 1; i < 11; i++) {
 //   console.log(reverse);
 // }
 // console.log(reverse);
-function add(num1, num2, func) {
-  let result = num1 + num2;
-  return func(result);
+//first function
+// function add(num1, num2, func) {
+//   let result = num1 + num2;
+//   return func(result);
+// }
+// //second function
+// function displayresults(re) {
+//   console.log(re);
+// }
+// add(2, 5, displayresults);//first function calling
+
+// function return
+function re() {
+  let add = 3 + 6;
+  return display(add);
 }
-//second function
-function displayresults(re) {
-  console.log(re);
+function display(result) {
+  console.log(result);
 }
-add(2, 5, displayresults);
+re();
