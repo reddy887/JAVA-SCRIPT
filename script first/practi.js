@@ -77,11 +77,39 @@ for (let i = 1; i < 11; i++) {
 // add(2, 5, displayresults);//first function calling
 
 // function return
-function re() {
-  let add = 3 + 6;
-  return display(add);
-}
-function display(result) {
-  console.log(result);
-}
-re();
+// function re() {
+//   let add = 3 + 6;
+//   return display(add);
+// }
+// function display(result) {
+//   console.log(result);
+// }
+// re();
+// const greet = {
+//   username: "reddybabu",
+//   //arrow function
+
+//   wel: () => {
+//     console.log(this.username);
+//   },
+// };
+// greet.wel();
+// // console.log(typeof greet);
+// // console.log(greet.wel());
+// // greet.wel();
+// console.log(this);
+// const arrow = () => {
+//   console.log(this);
+// };
+// arrow();
+
+const wel = {
+  username: "reddybabu",
+  greet: function () {
+    const inner = () => {
+      console.log(this.username);
+    };
+    inner();
+  },
+};
+wel.greet();
