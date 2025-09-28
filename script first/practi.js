@@ -103,13 +103,23 @@ for (let i = 1; i < 11; i++) {
 // };
 // arrow();
 
-const wel = {
+// const wel = {
+//   username: "reddybabu",
+//   greet: function () {
+//     const inner = () => {
+//       console.log(this.username);
+//     };
+//     inner();
+//   },
+// };
+// wel.greet();
+const greet = {
   username: "reddybabu",
-  greet: function () {
-    const inner = () => {
+  re: function () {
+    function inner() {
       console.log(this.username);
-    };
+    }
     inner();
   },
 };
-wel.greet();
+greet.re();
