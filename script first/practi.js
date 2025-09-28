@@ -113,13 +113,30 @@ for (let i = 1; i < 11; i++) {
 //   },
 // };
 // wel.greet();
-const greet = {
-  username: "reddybabu",
-  re: function () {
-    function inner() {
-      console.log(this.username);
-    }
-    inner();
-  },
+// const greet = {
+//   username: "reddybabu",
+//   re: function () {
+//     function inner() {
+//       console.log(this.username);
+//     }
+//     inner();
+//   },
+// };
+// greet.re();
+const obj = {
+  hero: "alluaarjun",
+  director: "sukumar",
+  moviename: "pushpa",
+  heroin: "rashmika",
 };
-greet.re();
+function MovieInfo(year, collection) {
+  console.log(
+    `the movie is${this.moviename} is directed by${this.director} yeaar is ${year} collections is ${collection} crore`
+  );
+}
+MovieInfo.call(obj, 2024, 1660);
+MovieInfo.apply(obj, [2024, 1660]);
+MovieInfo.call(obj, 2024, 1360);
+const cine = MovieInfo.bind(obj, 2024, 1660);
+cine();
+cine();
