@@ -123,20 +123,29 @@ for (let i = 1; i < 11; i++) {
 //   },
 // };
 // greet.re();
-const obj = {
-  hero: "alluaarjun",
-  director: "sukumar",
-  moviename: "pushpa",
-  heroin: "rashmika",
-};
-function MovieInfo(year, collection) {
-  console.log(
-    `the movie is${this.moviename} is directed by${this.director} yeaar is ${year} collections is ${collection} crore`
-  );
+// const obj = {
+//   hero: "alluaarjun",
+//   director: "sukumar",
+//   moviename: "pushpa",
+//   heroin: "rashmika",
+// };
+// function MovieInfo(year, collection) {
+//   console.log(
+//     `the movie is${this.moviename} is directed by${this.director} yeaar is ${year} collections is ${collection} crore`
+//   );
+// }
+// MovieInfo.call(obj, 2024, 1660);
+// MovieInfo.apply(obj, [2024, 1660]);
+// MovieInfo.call(obj, 2024, 1360);
+// const cine = MovieInfo.bind(obj, 2024, 1660);
+// cine();
+// cine();
+function callback(func) {
+  let name = "reddy";
+  func(name);
 }
-MovieInfo.call(obj, 2024, 1660);
-MovieInfo.apply(obj, [2024, 1660]);
-MovieInfo.call(obj, 2024, 1360);
-const cine = MovieInfo.bind(obj, 2024, 1660);
-cine();
-cine();
+function callback2(hari) {
+  console.log("reddybabu");
+  console.log(hari);
+}
+callback(callback2);
