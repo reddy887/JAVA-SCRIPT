@@ -140,12 +140,23 @@ for (let i = 1; i < 11; i++) {
 // const cine = MovieInfo.bind(obj, 2024, 1660);
 // cine();
 // cine();
-function callback(func) {
-  let name = "reddy";
-  func(name);
-}
-function callback2(hari) {
-  console.log("reddybabu");
-  console.log(hari);
-}
-callback(callback2);
+// function callback(func) {
+//   let name = "reddy";
+//   func(name);
+// }
+// function callback2(hari) {
+//   console.log("reddybabu");
+//   console.log(hari);
+// }
+// callback(callback2);
+
+//common arr and forloop
+const arr = [1, 3, 4, 5, 6, 7];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+//using foreach
+// arr.forEach((item, index) => {
+//   console.log(`${item}:${index}`);
+// });
