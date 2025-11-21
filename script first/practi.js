@@ -151,7 +151,7 @@ for (let i = 1; i < 11; i++) {
 // callback(callback2);
 
 //common arr and forloop
-const arr = [1, 3, 4, 5, 6, 7];
+// const arr = [1, 3, 4, 5, 6, 7];
 // for (let i = 0; i < arr.length; i++) {
 //   console.log(arr[i]);
 // }
@@ -160,9 +160,9 @@ const arr = [1, 3, 4, 5, 6, 7];
 // arr.forEach((item, index) => {
 //   console.log(`${item}:${index}`);
 // });
-const multiple = arr.map((items, index) => {
-  return items * 2;
-});
-console.log(multiple.length);
-console.log(multiple);
-console.log(arr);
+// const multiple = arr.map((items, index) => {
+//   return items * 2;
+// });
+// console.log(multiple.length);
+// console.log(multiple);
+// console.log(arr);
