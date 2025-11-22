@@ -166,3 +166,28 @@ for (let i = 1; i < 11; i++) {
 // console.log(multiple.length);
 // console.log(multiple);
 // console.log(arr);
+
+//destructuriing with arrays & objects
+/*const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+const [a, b, c, d, e, f, g, h] = arr;
+console.log(Math.max(...arr));
+console.log(a);
+
+const object = {
+  name: "har",
+  age: 34,
+  details: {
+    city: "tirupati",
+    ph: "+91  90145",
+  },
+};
+console.log(object);
+const { name, age, ...det } = object;
+console.log(name);
+console.log(age);
+console.log(det);
+// with function
+function fun(ar) {
+  return ar;
+}
+console.log(fun(arr));*/
