@@ -21,7 +21,26 @@ const h1 = document.querySelector("h1");
 //   h1.style.padding = "20px";
 // });
 
-h1.addEventListener("mousedown", () => {
-  console.log("mouse down event");
-  h1.style.color = "red";
-});
+// h1.addEventListener("mousedown", () => {
+//   console.log("mouse down event");
+//   h1.style.color = "red";
+// });
+
+// keyboard events practice
+// window.addEventListener("keydown", (event) => {
+//   console.log(event.key);
+//   if (event.key == "e") {
+//     console.log("exit");
+//   } else {
+//     console.log("your in game");
+//   }
+// });
+
+// const input = document.querySelector("input");
+// input.addEventListener("change", (event) => {
+//   h1.textContent = event.target.value;
+//   console.log(event.target.value);
+// });
+// input.addEventListener("input", (e) => {
+//   h1.textContent = e.target.value;
+// });
