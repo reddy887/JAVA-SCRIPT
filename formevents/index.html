@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>FORMS using in js</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <h1>JS FORMS</h1>
+  <br />
+  <form action="/">
+    <h1>signUp Today!</h1>
+    <div class="input-box">
+      <lable for="username">UserName</lable><br />
+      <input
+        name="username"
+        type="text"
+        placeholder="Enter UserName"
+        id="username"
+      />
+    </div>
+    <div class="input-box">
+      <lable for="email">Email</lable><br />
+      <input name="Email" type="email" placeholder="Enter @email" id="email" />
+    </div>
+    <div class="input-box">
+      <lable for="password">Password</lable><br />
+      <input
+        name="Password"
+        type="password"
+        placeholder="Enter The Password"
+        id="password"
+      />
+    </div>
+    <div class="input-box">
+      <lable for="confirm-password">Confirm Password</lable><br />
+      <input
+        name="confirm-password"
+        type="password"
+        placeholder="Re-Enter Password"
+        id="confirm-password"
+      />
+    </div>
+    <button type="submit">Submit</button>
+    <div id="form-info">
+      <p id="form-msg">Enter all Fields</p>
+    </div>
+  </form>
+  <script src="jsc.js" defer></script>
+</body>
