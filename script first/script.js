@@ -26,3 +26,36 @@ ba();*/
 // let re = "reddybabu";
 // let re1 = prompt("reddybabu");
 // console.log("wellcome back ".concat(re), re1);
+
+//Async and callbacks
+
+function SelectMovie(moviecall) {
+  setTimeout(() => {
+    console.log("selected movie");
+    moviecall();
+  }, 4000);
+}
+function SeatSelect(seatcall) {
+  setTimeout(() => {
+    console.log("selected seat");
+    seatcall();
+  }, 2000);
+}
+function MakePayment(paymentmethod) {
+  setTimeout(() => {
+    console.log("make a payment");
+    paymentmethod();
+  }, 5000);
+}
+function ConformStatus() {
+  setTimeout(() => {
+    console.log("conformStatus");
+  }, 2000);
+}
+SelectMovie(() => {
+  SeatSelect(() => {
+    MakePayment(() => {
+      ConformStatus();
+    });
+  });
+});
