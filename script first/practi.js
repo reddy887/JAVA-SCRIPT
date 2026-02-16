@@ -191,3 +191,14 @@ function fun(ar) {
   return ar;
 }
 console.log(fun(arr));*/
+try {
+  throw new Error("fail");
+  console.log(re);
+} catch (error) {
+  console.log(error.name);
+  console.log(error.message);
+  console.log(error);
+  throw new Error("f");
+} finally {
+  console.log("re");
+}
