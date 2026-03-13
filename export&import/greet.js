@@ -1,4 +1,5 @@
-export default function greet(name) {
+// export default
+function greet(name) {
   console.log(`hello,${name}`);
 }
-// export default greet;
+export default greet;
